@@ -1,0 +1,105 @@
+"""Task One"""
+# def NumberCheck(number):
+#    if 0<= number <= 100:
+#        return True
+#    else:
+#        return False
+
+#UserNumber = int(input("Enter a number. If it is between 0 and 100 the program will return 'True'. If not, it will return 'False': "))
+#if NumberCheck(UserNumber):
+#    print(f"True")
+#else:
+#    print(f"False")
+
+"""Task Two"""
+#def upperlowerstring(input):
+#    uppercase = 0
+#    lowercase = 0
+    # The count for these has been set to 0, allowing both counts to increment accurately when the user gives a string.
+
+#    for letter in input:
+#        if letter.isupper():
+#            uppercase += 1
+    # This checks for uppercase characters and increments the count by one if there is an uppercase character.
+#        elif letter.islower():
+#            lowercase += 1
+    # This checks for lowercase characters and increments the count by one if there is a lowercase character.
+
+#    return uppercase, lowercase
+#userinput = input("Enter a string. The program will print the number of uppercase and lowercase characters: ")
+    # This allows the user to input their string.
+
+#upper, lower = upperlowerstring(userinput)
+    # This calls the function that was created and gets the number of lower and uppercase strings from the user's input.
+
+#print(f"Your string has {upper} uppercase letters and {lower} lowercase letters.")
+
+"""Task Three"""
+# def LowerUpperCaseFix(username):
+#    return username.capitalize()
+    # The user's input can simply be fixed using the .capitalize() method.
+    # I searched up ways to go through each letter, but this method makes coding quicker and easier.
+
+# def program():
+#    name = input("Hello, please enter your name: ")
+#   namecorrected = LowerUpperCaseFix(name)
+#    print(f"Hello, {namecorrected}. Welcome to Python!")
+
+# program()
+
+"""Task Four"""
+# def LowerUpperCaseFix(username):
+#    RemoveLastCharacter = username[:-1].capitalize()
+#    return RemoveLastCharacter
+    # Removing the last character only requires one extra step. [:-1] looks at the last character of the name and removes it.
+
+#def program():
+#    name = input("Hello, please enter your name: ")
+#    namecorrected = LowerUpperCaseFix(name)
+#    print(f"Hello, {namecorrected}. Welcome to Python!")
+
+#program()
+
+"""Task Five"""
+# Centigrade = int(input("Please enter a temperature in Centigrade and the program will convert this to Fahrenheit: "))
+# Celsius and Centigrade are the same, therefore we can use the same formula as Celsius.
+# Fahrenheit = (Centigrade * 1.8) + 32
+# print(f"{Centigrade} Centigrade is equivalent to {Fahrenheit} Fahrenheit.")
+
+# Fahrenheit = int(input("Now, enter a temperature in Fahrenheit and the program will convert this to Centigrade: "))
+# Centigrade = (Fahrenheit - 32) / 1.8
+# print(f"{Fahrenheit} Fahrenheit is equivalent to {Centigrade} Centigrade.")
+
+"""Task Six"""
+# def CentigradeToFahrenheit():
+#    while True:
+#        Temperature = input("Please enter a temperature in Centigrade and the program will convert this to Fahrenheit: ")
+#        if Temperature.endswith("C"):
+#            try:
+#                centigrade = int(Temperature[:-1])
+#                Fahrenheit = (centigrade * 1.8) + 32
+#                print(f"{Temperature} is equivalent to {Fahrenheit}F.")
+#                break
+#            except ValueError:
+#                print("Enter a temperature followed by 'C'.")
+#       else:
+#            print("Enter a temperature followed by 'C'.")
+
+# CentigradeToFahrenheit()
+
+"""Task Seven"""
+NumberOne = int(input("Please enter your first number: "))
+NumberTwo = int(input("Please enter you second number: "))
+NumberThree = int(input("Please enter your third number: "))
+NumberFour = int(input("Please enter your fourth number: "))
+NumberFive = int(input("Please enter your fifth number: "))
+NumberSix = int(input("Please enter your sixth number: "))
+
+Numbers = [NumberOne, NumberTwo, NumberThree, NumberFour, NumberFive, NumberSix]
+Minimum = min(Numbers)
+Maximum = max(Numbers)
+Mean = sum(Numbers) / len(Numbers)
+
+print(f"The minimum number is: {Minimum}")
+print(f"The maximum number is: {Maximum}")
+print(f"The mean is: {Mean}")
