@@ -1,0 +1,68 @@
+"""Task One: Write a program that prints a cheery message"""
+print("Hello World! This is Python!")
+print()
+
+
+"""Task Two: Modify Task One so that it displays your name"""
+print("Hello! What is your name?")
+name = input()
+print(f"Hello {name}, welcome to Python!")
+print()
+
+
+"""Task Three: Over the summer, temperatures in Yorkshire reached 38.4C. Convert this value from 
+celsius to the equivalent temperature in Fahrenheit and display both"""
+"""0 Celsius = 32 Fahrenheit, therefore 38.4 Celsius = 101.12
+Formula: Fahrenheit = (Celsius x 1.8) + 32"""
+
+print("Hello, please enter a temperature in Celsius and I will convert this to Fahrenheit.")
+Celsius = float(input("Celcius: "))
+Fahrenheit = (Celsius * 1.8) + 32
+print(f"{Celsius} Celsius = {Fahrenheit} Fahrenheit")
+print()
+
+"""Task Four: Geoffrey Boycott played 609 matches, batted 1014 times, was not out 162 times, and
+scored 48426 runs. Write a program to calculate and display Boycott's batting average"""
+
+"""Formula for batting average: Batting average = Total Runs Scored / Number of Times Out
+Batting Average = 48426 / 1014 - 162 = 852"""
+
+print("Geoffrey Boycott played 609 matches, batted 1014 times, was not out 162 times, and scored 48426"
+      " runs")
+BattingAverage = 48426 / (1014 - 162)
+BattingAverage = round(BattingAverage, 1)
+"""I have rounded this number to 1 decimal place to make it more simple for the user"""
+
+print(f"This means that his Batting Average was {BattingAverage}")
+print()
+
+"""Task Five: The Head of Computing at the University of Poppleton is tasked with dividing a group
+of students into lab groups. A lab group is 24 students, since this is the number of PCs in a lab. Write a program that 
+calculates how many groups are needed for the following number of students: 113, 175, 12. Display how many full groups 
+there will be, and how many students will be in the smaller "left over" group."""
+
+"""We need to figure out how many groups and leftover students there will be"""
+"""113 Students: 113 / 24 = 4 Full Groups with 17 Leftover Students (113 MOD 24 = 17)"""
+"""175 Students: 175 / 24 = 7 Full Groups with 7 Leftover Students (175 MOD 24 = 7)"""
+"""12 Students: 12 / 24 = No Full Groups with 12 Leftover Students (12 MOD 24 = 12)"""
+
+"""NOTE: To find the modulus on Python, instead of using // to divide, use %"""
+
+print("The first cohort has 113 students, the second has 175 students and the third has 12 students")
+SetOne = 113
+SetTwo = 175
+SetThree = 12
+GroupSize = 24
+
+FullGroupOne = SetOne // GroupSize
+SetOneLeftover = SetOne % GroupSize
+
+FullGroupTwo = SetTwo // GroupSize
+SetTwoLeftover = SetTwo % GroupSize
+
+FullGroupThree = SetThree // GroupSize
+SetThreeLeftover = SetThree % GroupSize
+
+print(f"113 Students: {FullGroupOne} Full Groups and {SetOneLeftover} Leftover Students")
+print(f"175 Students: {FullGroupTwo} Full Groups and {SetTwoLeftover} Leftover Students")
+print(f"12 Students: {FullGroupThree} Full Groups and {SetThreeLeftover} Leftover Students")
