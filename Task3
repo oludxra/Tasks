@@ -1,0 +1,100 @@
+"""Task One"""
+name = input("Hello, please enter your name: ")
+Greeting = print("Hello, Stranger! Welcome to Python!") if not name else print(f"Hello {name}, Welcome to Python!")
+print()
+
+"""Task Two"""
+# username = input("Please enter a username: ")
+# password = input("Please enter a password: ")
+# confirmpassword = input("Please confirm this password: ")
+
+# if confirmpassword == password: print("Password Set")
+# else: print("Passwords do not match!")
+
+"""Task Three"""
+# username = input("Please enter a username: ")
+
+# while True:
+#    password = input("Please enter a password: ")
+#
+#    if len(password) < 8:
+#        print("Password is too short")
+#    elif len(password) > 12:
+#        print("Password is too long")
+#    else:
+#        confirmpassword = input("Please confirm this password: ")
+#
+#        if confirmpassword == password:
+#            print("Passwords set!")
+#            break
+#        else:
+#            print("Passwords do not match! Please try again...")
+
+# print()
+
+"""Task Four"""
+#username = input("Please enter a username: ")
+#password = input("Please enter a password: ")
+#BadPasswords = ['password', 'letmein', 'sesame', 'hello', 'justinbieber']
+
+#while True:
+#    if password in BadPasswords:
+#        print("This is a bad password, try again.")
+#        password = input("Please enter a password: ")
+#    break
+
+"""Task Five"""
+#username = input("Please enter a username: ")
+#password = input("Please enter a password: ")
+#BadPasswords = ['password', 'letmein', 'sesame', 'hello', 'justinbieber']
+
+#while True:
+#    if password in BadPasswords:
+#        print("This is a bad password, try again.")
+#        password = input("Please enter a password: ")
+#    else:
+#        while True:
+#            confirmpassword = input("Please confirm this password: ")
+#            if confirmpassword == password:
+#                print("Password set.")
+#                break
+#            else:
+#                print("Passwords do not match! Please try again.")
+#       break
+
+# print()
+
+"""Task Six"""
+# print("Here is the Seven Times Table:")
+# """The aim is to create a loop; this will iterate from 0 to 12"""
+# for i in range(13):
+#    print(f"{i} x 7 = {i * 7}")
+    # 'range' starts from zero instead of 1; by setting it to 13 it will include every number from 0 to 12
+    # 'i' is the number that is being multiplied by 7. Once 'i' has been multiplied by 7, it will display
+    # the result.
+# print()
+
+"""Task Seven"""
+# number = int(input("Give me a number between 0 and 12 and I will multiply this number by 7: "))
+# while True:
+#    if 0 <= number <= 12:
+#        print(f"{number} multiplied by 7 = {number * 7}")
+#        break
+#    else:
+#        number = int(input("Invalid. Please enter a number between 0 and 12: "))
+# print()
+
+"Task Eight"
+number = int(input("Give me a number between 0 and 12 and I will multiply this number by 7: "))
+while True:
+    if 0 <= number <= 12:
+        for i in range(13):
+            print(f"{i} multiplied by {number} = {number * i}")
+        break
+    elif -12 <= number < 0:
+        for i in range(12, -1, -1):
+            print(f"{i} multiplied by {number} = {number * i}")
+        break
+    else:
+        number = int(input("Invalid. Please enter a number between 0 and 12: "))
+print()
