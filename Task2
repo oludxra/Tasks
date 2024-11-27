@@ -1,0 +1,32 @@
+"""Task One"""
+print("Hello, what is your name?")
+name = input()
+print(f"Hello {name}. Good to meet you!")
+print()
+
+"""Task Two"""
+Celsius = float(input("Enter a temperature in Celsius: "))
+Fahrenheit = (Celsius * 1.8) + 32
+print(f"{Celsius}C is equivalent to {Fahrenheit}F")
+print()
+
+"""Task Three"""
+print("There are normally 24 students in a group, but sometimes this may to make similar sized groups")
+NumOfStudents = int(input("How many students? "))
+GroupSize = int(input("Group Size? "))
+FullGroups = NumOfStudents // GroupSize
+LeftoverStudents = NumOfStudents % GroupSize
+GroupWord = "groups" if FullGroups >> 1 else "group"
+StudentWord = "students" if LeftoverStudents >> 1 else "student"
+print(f"There will be {FullGroups} {GroupWord} with {LeftoverStudents} {StudentWord} left over.")
+print()
+
+"""Task Four"""
+NumOfSweets = int(input("How many sweets do you have in the tub? "))
+NumOfPupils = int(input("How many students do you have in your class? "))
+Giveout = NumOfSweets // NumOfPupils
+KeepSweets = NumOfSweets % NumOfPupils
+GiveWord = "sweets" if Giveout >> 1 else "sweet"
+KeepWord = "sweets" if KeepSweets >> 1 else "sweet"
+print(f"You can give each pupil {Giveout} {GiveWord} and you will have {KeepSweets} {KeepWord} left.")
+print()
